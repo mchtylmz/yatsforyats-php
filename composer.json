@@ -1,0 +1,14 @@
+{
+    "require": {
+        "magicalex/write-ini-file": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        },
+        "files": [
+          "App/Functions.php"
+        ]
+    }
+}

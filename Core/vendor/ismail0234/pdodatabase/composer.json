@@ -1,0 +1,23 @@
+{
+    "name": "ismail0234/pdodatabase",
+    "type": "library",
+    "description": "pdo easy and fast speed framework strong database class.",
+    "keywords": ["pdo database","database class", "bot benson", "pdo strong database class"],
+    "homepage": "https://github.com/ismail0234/pdodatabase",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Ismail Satilmis",
+            "email": "ismaiil_0234@hotmail.com",
+            "homepage": "https://github.com/ismail0234/pdodatabase",
+            "role": "Owner and Developer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "IS\\QueryBuilder\\Database\\": "IS/QueryBuilder/Database"
+        }
+    },
+    "minimum-stability": "stable"    
+}

@@ -1,0 +1,1963 @@
+:root {
+    --primary: #07A4BA;
+}
+
+.slick-slider * {
+    min-height: 0 !important;
+    min-width: 0 !important;
+}
+
+.top-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    &.light {
+        position: relative !important;
+        top: unset !important;
+
+        .navbar {
+            .top-menu-item {
+                &.active {
+                    .top-menu-link {
+                        color: var(--primary);
+                        border-bottom: 2px solid var(--primary);
+
+                    }
+                }
+
+                .top-menu-link {
+                    color: rgba(20, 33, 53, 0.5);
+                    font-weight: 600;
+
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+
+                font-size:16px;
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+            i.fa.fa-bars {
+                color: var(--primary);
+            }
+        }
+
+        .languages {
+            a {
+                color: rgba(20, 33, 53, 0.5);
+                border: 2px solid #fff;
+
+                &.active {
+                    border: 2px solid var(--primary);
+                    border-radius: 5px;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    .navbar {
+        button.navbar-toggler {
+            &:focus {
+                outline: none !important;
+            }
+        }
+
+        i.fa.fa-bars {
+            color: #fff;
+        }
+
+        .navbar-collapse.collapsing {
+            background: #fff;
+        }
+
+        .navbar-collapse.collapse.show {
+            background: #fff;
+
+            .top-menu-item.active {
+                .top-menu-link {
+                    color: #000;
+                }
+            }
+
+            .top-menu-link {
+                color: #000;
+            }
+        }
+    }
+
+    .mobile-navbar-logo {
+        height: 20px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .top-menu-item {
+        &.active {
+            .top-menu-link {
+                color: #fff;
+            }
+        }
+
+        .top-menu-link {
+            color: #fefefe;
+            font-weight: 600;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        font-size:16px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .languages {
+        a {
+            &.active {
+                border: 2px solid #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.main-slider {
+    .slick-dots {
+        bottom: 65px;
+    }
+
+    .slick-dots li button {
+        background-color: #fff !important;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: #fff !important;
+    }
+
+    .main-slider-item {
+        position: relative;
+
+        .main-slider-item-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .big-title {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 76px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            .light-title {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-slider {
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .main-slider-item {
+            height: 480px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .main-slider-item-content {
+                padding-top: 100px;
+                justify-content: flex-start;
+
+                .big-title {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #FFFFFF;
+
+                }
+
+                .light-title {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+.search-area-row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .search-area-row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.mobile-search {
+    .dropdown-collapse {
+        border-bottom: none;
+
+        img {
+            height: 15px;
+        }
+
+        .dropdown-label {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C0C3D0;
+            padding-left: 0;
+        }
+
+        &.show {
+            .dropdown-label {
+                color: var(--primary);
+            }
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .btn {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #142135;
+
+            i {
+                transition: .2s;
+                transform: rotate(0deg);
+                color: var(--primary);
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        .btn[aria-expanded="true"] {
+            i {
+                margin-top: -5px;
+                transition: .2s;
+                transform: rotate(180deg);
+            }
+        }
+
+        .dropdown-menu {
+            border: none !important;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+            .dropdown-item {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #142135;
+
+                &:hover {
+                    background-color: #eeeeee;
+                }
+
+                span {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    margin-left: 5px;
+                    color: #616C7D;
+                }
+            }
+        }
+    }
+}
+
+.collapse-search-items {
+    .collapse-search-item {
+        border-bottom: 1px solid #e9e9e9;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .left-info {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+
+            color: #142135;
+        }
+
+        .right-info {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #616C7D;
+        }
+    }
+}
+
+.search-area {
+    margin-top: -75px;
+    background-color: white !important;
+    border-radius: 10px;
+    position: relative;
+
+    &.yats {
+        margin-top: 0 !important;
+    }
+
+    .search-col {
+        border-right: 1px solid #ccc;
+    }
+
+    .dropdown {
+        background-color: white !important;
+        border-bottom: none;
+
+        .dropdown-label {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #C0C3D0;
+            padding-left: 0;
+        }
+
+        &.show {
+            .dropdown-label {
+                color: var(--primary);
+            }
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .btn {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #142135;
+
+            i {
+                transition: .2s;
+                transform: rotate(0deg);
+                color: var(--primary);
+            }
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        .btn[aria-expanded="true"] {
+            i {
+                margin-top: -5px;
+                transition: .2s;
+                transform: rotate(180deg);
+            }
+        }
+
+        .dropdown-menu {
+            border: none !important;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+            .dropdown-item {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #142135;
+
+                &:hover {
+                    background-color: #eeeeee;
+                }
+
+                span {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    margin-left: 5px;
+                    color: #616C7D;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search-area {
+        margin-top: -275px;
+
+        .search-col {
+            border-right: none;
+
+            .dropdown {
+                border-bottom: 1px solid #ccc;
+
+                img {
+                    width: 14px;
+                }
+
+                .dropdown-label {
+                    color: #142135;
+                }
+
+                .btn {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: #142135;
+                }
+            }
+        }
+    }
+}
+
+.centered-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 130%;
+    color: #142135;
+}
+
+.centered-description {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    color: #616C7D;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+@media screen and (max-width:768px) {
+    .centered-title {
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 130%;
+        /* or 31px */
+
+
+        color: #142135;
+    }
+
+    .centered-description {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 19px */
+
+        text-align: center;
+
+        color: #616C7D;
+
+    }
+}
+
+
+
+.slick-slide:focus {
+    outline: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+.gidilecek-yerler {
+    .gidilecek-yer-item {
+        .overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(34, 55, 86, 0) 34.88%, #223756 100%);
+        }
+
+        a {
+            &:hover {
+                .details {
+                    .description {
+                        transition: .2s;
+                        display: flex;
+                    }
+                }
+            }
+
+            .details {
+                z-index: 2;
+                color: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 16px;
+
+                .bolge {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 125%;
+                    /* identical to box height, or 35px */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #FFFFFF;
+                }
+
+                .yat-sayisi {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 125%;
+                    /* identical to box height, or 20px */
+
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+
+                    color: #FFFFFF;
+                }
+
+                .description {
+                    transition: .2s;
+                    display: none;
+                    align-items: center;
+                    flex-direction: column;
+
+                    img {
+                        height: 15px;
+                    }
+
+                    p {
+                        font-family: SF UI Display;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 13px;
+                        line-height: 160%;
+                        /* or 21px */
+
+                        text-align: center;
+
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.en-luks-yatlar-container {
+    background: #F5F4F3;
+
+    .dumen {
+        position: absolute;
+        top: 46%;
+        left: 0;
+    }
+
+    .en-luks-yatlar {
+        .en-luks-yatlar-item {
+            .yat-adi {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 130%;
+                /* identical to box height, or 34px */
+                color: #142135;
+            }
+
+            .yat-marka-yil {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 125%;
+                /* identical to box height, or 15px */
+
+                display: flex;
+                align-items: center;
+
+                color: #142135;
+
+                span {
+                    margin-left: 5px;
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 125%;
+                    /* identical to box height, or 15px */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #A88C71;
+                }
+            }
+
+            .yat-day {
+
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 125%;
+                /* identical to box height, or 20px */
+
+                display: flex;
+                align-items: center;
+
+                color: #142135;
+            }
+
+            .gunluk-fiyat {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 125%;
+                /* identical to box height, or 27px */
+
+                display: flex;
+                align-items: center;
+
+                color: #07A4BA;
+            }
+
+            .yat-spec {
+                p {
+                    margin-bottom: 0;
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 125%;
+                    /* or 16px */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #142135;
+                }
+
+                img {
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .en-luks-yatlar-container {
+        background: #F5F4F3;
+
+        .dumen {
+            display: none;
+        }
+
+        .en-luks-yatlar {
+            .en-luks-yatlar-item {
+                .yat-adi {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 14px;
+                    line-height: 130%;
+                    /* or 18px */
+
+
+                    color: #142135;
+                }
+
+                .yat-marka-yil {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 125%;
+                    /* identical to box height, or 12px */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #142135;
+
+
+                    span {
+                        font-family: Playfair Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 10px;
+                        line-height: 125%;
+                        /* identical to box height, or 12px */
+
+                        display: flex;
+                        align-items: center;
+
+                        color: #A88C71;
+                    }
+                }
+
+                .yat-day {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    line-height: 125%;
+                    /* identical to box height, or 12px */
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    color: #142135;
+
+                }
+
+                .gunluk-fiyat {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 125%;
+                    /* identical to box height, or 17px */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #07A4BA;
+                }
+
+                .yat-spec {
+                    img {
+                        height: 15px;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        font-family: Playfair Display;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 9px;
+                        line-height: 125%;
+                        /* or 11px */
+
+                        display: flex;
+                        align-items: center;
+
+                        color: #142135;
+
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.organizasyonlar {
+    .organizasyon-item {
+        .organizasyon-left-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(109.45deg, rgba(34, 55, 86, 0.94) 27.62%, rgba(34, 55, 86, 0) 105.31%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .organizasyon-title {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 45px;
+                line-height: 130%;
+                /* or 58px */
+
+
+                color: #FFFFFF;
+            }
+
+            .organizasyon-desc {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 160%;
+                /* or 24px */
+
+
+                color: #FFFFFF;
+            }
+
+            .organizasyon-btn {
+                display: inline-block;
+                width: 165px;
+                border: 1px solid #fff;
+                border-radius: 6px;
+                background: transparent;
+                color: #fff;
+            }
+        }
+
+        .organizasyon-right-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            background: linear-gradient(104.54deg, rgba(0, 122, 149, 0.86) 18.15%, rgba(0, 122, 149, 0) 109.58%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .organizasyon-title {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 45px;
+                line-height: 130%;
+                /* or 58px */
+
+
+                color: #FFFFFF;
+            }
+
+            .organizasyon-desc {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 160%;
+                /* or 24px */
+
+
+                color: #FFFFFF;
+            }
+
+            .organizasyon-btn {
+                width: 165px;
+                border: 1px solid #fff;
+                border-radius: 6px;
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .organizasyonlar {
+        .organizasyon-item {
+            .organizasyon-left-overlay {
+                .organizasyon-title {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 130%;
+                    /* or 31px */
+
+
+                    color: #FFFFFF;
+                }
+
+                .organizasyon-desc {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 160%;
+                    /* or 19px */
+
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .organizasyon-right-overlay {
+                .organizasyon-title {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 130%;
+                    /* or 31px */
+
+
+                    color: #FFFFFF;
+                }
+
+                .organizasyon-desc {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 160%;
+                    /* or 19px */
+
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.yardim-container {
+    background: #07A4BA;
+
+    .yardim-title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    .yardim-desc {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #FFFFFF;
+    }
+
+    .yardim-btn {
+        width: 165px;
+        border-radius: 6px;
+        display: inline-block;
+        width: 165px;
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+    }
+
+    .help-woman {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            display: flex;
+            align-self: end;
+            justify-self: center;
+            bottom: 0;
+            height: 140%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .yardim-container {
+        .yardim-title {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 30px;
+            /* or 107% */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .yardim-desc {
+
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+            /* or 22px */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+    }
+}
+
+.info-container {
+    background: #F5F4F3;
+
+    .info-title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 130%;
+        /* or 58px */
+
+        font-feature-settings: 'liga'off;
+        text-align: center;
+
+        color: #142135;
+    }
+
+    .info-desc {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 160%;
+        /* identical to box height, or 24px */
+
+        text-align: center;
+        font-feature-settings: 'liga'off;
+
+        color: #888480;
+
+    }
+
+    .info-item-title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        font-feature-settings: 'liga'off;
+
+        color: #142135;
+
+    }
+
+    .info-item-desc {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 160%;
+        /* or 24px */
+
+        text-align: center;
+        font-feature-settings: 'liga'off;
+
+        color: #ABA8A5;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .info-container {
+        .info-title {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 130%;
+            /* or 31px */
+
+            text-align: center;
+            font-feature-settings: 'liga'off;
+
+            color: #142135;
+
+        }
+
+        .info-desc {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 160%;
+            /* or 19px */
+
+            text-align: center;
+            font-feature-settings: 'liga'off;
+
+            color: #888480;
+
+        }
+
+        .info-slider {
+            .d-flex.flex-column.align-items-center {
+                background: #fff;
+                border-radius: 10px;
+                padding: 16px;
+            }
+        }
+    }
+}
+
+.footer {
+    .footer-link-item {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+
+        color: #142135;
+    }
+
+    .copyright {
+
+        font-family: Markazi Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        font-feature-settings: 'liga'off;
+
+        color: #616C7D;
+    }
+}
+
+.yat-card {
+    border-radius: 0px !important;
+
+    .card-img-top {
+        border-radius: 0px !important;
+    }
+}
+
+.yatlar {
+    .yatlar-liste {
+
+        .sehir-adi {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 130%;
+            /* identical to box height, or 42px */
+
+
+            color: #142135;
+        }
+
+        .sehir-yat-sayisi {
+            background: #E4FCFF;
+            border-radius: 6px;
+
+            p {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                color: #07A4BA;
+            }
+        }
+    }
+
+    .yat-adi {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 26px;
+        /* identical to box height, or 34px */
+        color: #142135;
+    }
+
+    .yat-marka-yil {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 125%;
+        /* identical to box height, or 15px */
+
+        display: flex;
+        align-items: center;
+
+        color: #142135;
+
+        span {
+            margin-left: 5px;
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 125%;
+            /* identical to box height, or 15px */
+
+            display: flex;
+            align-items: center;
+
+            color: #A88C71;
+        }
+    }
+
+    .yat-day {
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+
+        color: #142135;
+    }
+
+    .gunluk-fiyat {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 125%;
+        /* identical to box height, or 27px */
+
+        display: flex;
+        align-items: center;
+
+        color: #07A4BA;
+    }
+
+    .yat-spec {
+        p {
+            margin-bottom: 0;
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 125%;
+            /* or 16px */
+
+            display: flex;
+            align-items: center;
+
+            color: #142135;
+        }
+
+        img {
+            height: 20px;
+        }
+    }
+
+    .harita {}
+}
+
+@media screen and (max-width:768px) {
+    .mobile-harita {
+        height: 250px;
+    }
+}
+
+.slider-col {
+    border-bottom: 1px solid #dee2e6;
+}
+
+@media screen and (min-width:768px) {
+    .slider-col {
+        border-bottom: none !important;
+    }
+}
+
+.yat-detay-slider {
+    .item {
+        position: relative;
+
+        .yat-item-detaylar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            background: linear-gradient(181.06deg, rgba(10, 17, 36, 0) 0.91%, #0A1124 145.47%);
+
+            .yat-adi {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 130%;
+                color: #E5E5E5;
+            }
+
+            .diger-detaylar {
+                .diger-detaylar-item {
+                    font-family: SF UI Display;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #E5E5E5;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: 15px;
+
+        li {
+            &.slick-active {
+                button {
+                    background: #fff;
+                }
+            }
+
+            button {
+                background: #fff;
+            }
+        }
+    }
+}
+
+.yat-detay-header {
+    border: 1px solid #ECEDF0;
+
+    .yat-adi {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 130%;
+        color: #142135;
+    }
+
+    .yat-marka {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+
+        display: flex;
+        align-items: center;
+
+        color: #142135;
+
+    }
+
+    .yat-yil {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+
+        display: flex;
+        align-items: center;
+
+        color: #A88C71;
+    }
+
+    .gunluk {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        color: #142135;
+
+        .fiyat {
+
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 125%;
+
+            color: #07A4BA;
+        }
+    }
+
+    .specs {
+        .spec-info {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 125%;
+            color: #142135;
+        }
+    }
+}
+
+.yat-detay-content {
+    .text-contents {
+        border-right: 1px solid #ECEDF0;
+    }
+
+    @media screen and (max-width:992px) {
+        border-right: none;
+    }
+
+    .title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+        color: #142135;
+    }
+
+    p {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        /* identical to box height, or 29px */
+        color: #616C7D;
+        margin-bottom: 32px;
+    }
+
+    .box {
+        .season {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 180%;
+            color: #142135;
+        }
+
+        .season-exp {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 180%;
+            /* or 29px */
+
+
+            color: #646464;
+        }
+
+        .approx {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 180%;
+            color: #646464;
+
+            span {
+                color: #142135;
+
+            }
+        }
+    }
+
+    .specifications-box {
+        .spec-item {
+            border-bottom: 1px solid #ECEDF0;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            .spec-title {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #616C7D;
+            }
+
+            .spec-info {
+                font-family: SF UI Display;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #142135;
+            }
+        }
+    }
+}
+
+.features-title {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #142135;
+}
+
+.features-slider {
+    .slick-list.draggable {
+        padding-bottom: 25px;
+    }
+
+    .slick-dots {
+        bottom: 0px;
+        width: 92%;
+    }
+
+    .item {
+        .feature-title {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #142135;
+            text-align: center;
+        }
+
+        .feature-desc {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 180%;
+            /* or 25px */
+
+            text-align: center;
+        }
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #fff;
+    font-weight: 500;
+    border-bottom: 2px solid var(--primary);
+    border-radius: 0;
+}
+
+.nav-pills .nav-link {
+    color: gray;
+    font-weight: 500;
+}
+
+.tab-item {
+    margin-bottom: 16px;
+
+    .tab-item-title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 180%;
+        /* or 25px */
+
+
+        color: #616C7D;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .tab-item {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #EDF1F8;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.check-av-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    color: #142135;
+    margin-bottom: 10px;
+}
+
+.check-av-desc {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #142135;
+}
+
+@media screen and (min-width:992px) {
+    .check-av-desc {
+        max-width: 60%;
+    }
+}
+
+.selected-yatch {
+    background: #F5F4F3;
+
+    .title {
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 130%;
+        /* identical to box height, or 34px */
+
+
+        color: #142135;
+    }
+
+    .yat-spec {
+        p {
+            margin-bottom: 0;
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 125%;
+            /* or 16px */
+
+            color: #142135;
+        }
+
+    }
+
+    .yat-adi {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 130%;
+        /* identical to box height, or 34px */
+
+
+        color: #142135;
+    }
+
+    .yat-marka {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 125%;
+        /* identical to box height, or 15px */
+
+
+        color: #142135;
+    }
+
+    .yat-yil {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 125%;
+        /* identical to box height, or 15px */
+
+        color: #A88C71;
+
+    }
+
+    .day {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+
+        color: #142135;
+    }
+
+    .price {
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 125%;
+        /* identical to box height, or 27px */
+
+        display: flex;
+        align-items: center;
+
+        color: #07A4BA;
+    }
+}
+
+.mesaj {
+
+    .title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #142135;
+    }
+
+    .form-group {
+        @media screen and (min-width:992px) {
+            &.surname {
+                input {
+                    border: 1px solid #C0D1E8;
+                }
+            }
+
+            &.email {
+                input {
+                    border: 1px solid #07A4BA;
+                }
+            }
+        }
+
+        input {
+            height: 56px;
+            BORDER: 1px solid #EBF2FA;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+    }
+
+    textarea.form-control {
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .mesaj-gonder {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+        letter-spacing: -0.02em;
+
+        color: #FFFFFF;
+    }
+}
+
+.contact-slider {
+    margin-bottom: 25px;
+
+    .slick-dots {
+        bottom: 15px;
+        width: 92%;
+    }
+
+    .item {
+        .contact-title {
+
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #142135;
+        }
+
+        .contact-desc {
+            font-family: SF UI Display;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            font-feature-settings: 'liga'off;
+
+            color: #616C7D;
+        }
+    }
+}
+
+.mesaj-gonderildi {
+    .title {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #142135;
+    }
+
+    .desc {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        color: #616C7D;
+    }
+
+    .btn {
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 125%;
+        /* identical to box height, or 20px */
+        letter-spacing: -0.02em;
+
+        color: #FFFFFF;
+    }
+}
+
+.hakkimizda-page-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 130%;
+    /* or 58px */
+
+
+    color: #142135;
+}
+
+.hakkimizda-detail-title {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #142135;
+}
+
+.hakkimizda-detail-desc {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    /* or 29px */
+
+
+    color: #616C7D;
+}
